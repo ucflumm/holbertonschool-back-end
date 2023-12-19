@@ -23,7 +23,7 @@ if __name__ == '__main__':
     completed_tasks = sum(1 for todo in todos_data if todo['completed'])
 
     # Print the employee's name
-    print(f"Employee {user_data['name']} is done with tasks"
+    print(f"Employee {user_data['name']} is done with tasks "
           f"({completed_tasks}/{total_tasks}):")
     # Print the title of completed tasks
     for todo in todos_data:

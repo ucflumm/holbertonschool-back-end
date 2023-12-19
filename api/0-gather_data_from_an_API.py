@@ -3,6 +3,7 @@
 import requests
 import sys
 
+# Base URL for the REST API
 api_url = 'https://jsonplaceholder.typicode.com'
 employee_id = int(sys.argv[1])
 
@@ -19,9 +20,10 @@ todos_data = todos_response.json()
 total_tasks = len(todos_data)
 completed_tasks = sum(1 for todo in todos_data if todo['completed'])
 
+# Print the employee's name
 print(f"Employee {user_data['name']} is done with tasks"
       f"({completed_tasks}/{total_tasks}):")
-
+# Print the title of completed tasks
 for todo in todos_data:
     if todo['completed']:
         print(f"\t{todo['title']}")

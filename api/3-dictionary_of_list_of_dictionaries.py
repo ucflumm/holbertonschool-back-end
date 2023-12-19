@@ -7,10 +7,6 @@ import requests
 import sys
 
 
-import requests
-import sys
-import json
-
 api_url = "https://jsonplaceholder.typicode.com"
 
 all_employee_tasks = {}

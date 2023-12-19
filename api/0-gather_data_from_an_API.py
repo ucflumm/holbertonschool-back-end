@@ -1,7 +1,5 @@
 #!/usr/bin/python3
-"""
-    Write a python script using the REST API
-"""
+"""Returns information about an employee's TODO list progress."""
 import requests
 import sys
 
